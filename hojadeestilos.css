@@ -1,0 +1,494 @@
+html{
+scroll-padding-top: 130px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%; 
+}
+
+body {
+    background-color: #111d32; 
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 2.5%;
+    margin-top: 1.5%;
+    padding: 1%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: clamp(2rem, 7vw, 4rem); /* Tamaño de texto con clamp (medida minima, medida recomendada, medida maxima) */
+    border-radius: 8%;
+    box-shadow: 
+    0 0 10px blue,
+    0 0 20px blue,
+    0 0 30px blue,
+    0 0 40px blue;
+    overflow-wrap: break-word;/* Evita desbordamiento de texto */
+}
+
+/* Contenedor de la imagen principal, mundo conectado */
+.cajamundo {
+    width: 100%;
+    margin: 30px auto 0;
+    padding: 1%;
+}
+
+/* Imagen del mundo conectado, esta dentro de un div */
+.imgprincipal {
+    width: 100%;
+    border-radius: 35% 35% 0 0;
+    box-shadow: 0 0 0 5px rgb(3, 14, 71);
+    height: 60vh;
+}
+#Titleindice{
+    text-align: center;
+    font-size: 2vh;
+    color: white;
+}
+/* Sección de índice, es el NAV*/
+#indice {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: 5px auto 30px;
+    padding: 1%;
+    z-index: 100;
+    background-color: black;
+}
+
+
+
+.ContenedorSubtemas {
+    display: flex; 
+    flex-direction: row; 
+    overflow-x: auto;
+    gap: 8px; 
+    padding: 10px 5px; 
+    width: 100%;
+    white-space: nowrap;
+}
+
+.ContenedorS1, .ContenedorS2, .ContenedorS3, 
+.ContenedorS4, .ContenedorS5, .ContenedorS6, .ContenedorS7 {
+    flex: 0 0 auto;
+    width: calc(14% - 8px); 
+    min-width: 130px;
+    max-width: 200px; 
+    padding: 8px 12px;
+
+    white-space: normal;  
+    color: white;
+    font-size: clamp(12px, 2vw, 16px);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.enlasub
+{
+color: white;
+text-shadow: 0 0 10px red;
+font-weight: 800;
+}
+
+.subs{
+    text-align: center;
+    width: 70vw;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 
+    0 0 10px black,
+    0 0 20px black,
+    0 0 30px black;
+    color: white;
+    font-family: Tekurt;
+    font-size: 4vw;
+    font-weight: 900;
+    background-image: url(/PROYECTO_CONEXION_DIGITAL/IMAGENES/FONDO_TITULO/111.webp);
+    background-size: 20%;
+    background-attachment: fixed;
+    border-width: 10px;
+    box-shadow:0 0 10px #08f984,
+    0 0 20px #08f984;
+}
+
+.imgs1{
+    width: 35vw;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px black;
+
+}
+
+.cajapar1{
+    width: 90vw;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    padding: 4%;
+    background-color: #00B4D8;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.par1{
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.lincon{
+    width: 40vw;
+}
+
+.parlin{
+    width: 90vw;
+    background-color: #b8eff6;
+    border-style: solid;
+    border-width: 1vw;
+    border-color: #81c784;
+    padding: 15px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imglin{
+    display: block;
+    width: 30vw;
+    height: 20vh;
+}
+
+h4{
+    text-align: center;
+    font-family: ENPAGOS;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.plinea{
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.pares{
+display: block;
+text-align: justify;
+font-size: 1.5rem;
+padding: 15px;
+} 
+
+.titlecomponentes{
+    text-shadow: 0 0 10px #FF6D00;
+}
+
+#listaci{
+padding: 40px;
+margin-bottom: 50px;
+}
+
+.listacinco{
+    padding: 15px;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.parcon{
+    display: block;
+    width: 40vw;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.parcon2{
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.textimg{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.imges{
+width: 40vw;
+height: 35vh;
+border-radius: 40px;
+box-shadow:
+0 0 10px #FF6D00,
+0 0 20px #FF6D00;
+}
+
+.imgser{
+width: 70vw;
+height: 35vh;
+border-radius: 40px;
+box-shadow:
+0 0 10px #FF6D00,
+0 0 20px #FF6D00; 
+}
+
+#ultimo{
+    margin-bottom: 65px;
+}
+
+.contenedorvirus{
+    width: 90vw;
+    padding: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background: linear-gradient(to top, rgb(255, 0, 0), transparent);
+}
+
+.titlevirus{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+    color: white;
+    text-shadow: 
+    0 0 10px black,
+    0 0 20px black,
+    0 0 30px black,
+    0 0 40px black,
+    0 0 50px black,
+    0 0 60px black;
+    font-weight: 800;
+}
+
+#txtvirus{
+    color: white;
+}
+
+.imgvirus{
+display: block;
+width: 70vw;
+height: 45vh;
+margin-left: auto;
+margin-right: auto;
+border-radius: 40px;
+}
+
+.contenedoranti{
+    width: 90vw;
+    padding: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background: linear-gradient(to top, #004205, transparent);
+}
+
+.listac{
+    padding: 15px;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+#txtanti{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+#upar{
+    color: white;
+    display: block;
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-bottom: 45px;
+
+}
+
+.lispre{
+    width: 90vw;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    padding: 4%;
+}
+
+.seccion-comentarios{
+text-align: center;
+background-color: rgba(229, 245, 230, 0.7);
+padding: 2rem;
+border-radius: 12px;
+border: 10px solid rgba(4, 107, 9, 0.1); 
+margin-top: 2rem;
+}
+
+.cajaco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.txtarea{
+resize: none; 
+}
+.espacio{
+    width: 40vw;
+    height: 15vh;
+    margin-left: 20px;
+}
+
+.espacioco{
+    width: 40vw;
+    height: 8vh;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+#envio{
+    box-shadow:0 0 10px red;
+}
+
+
+#details1 {
+    background-color: #2c3e50;
+    padding: 0;  
+    width: 90vw;
+    margin: 0 auto 8px; 
+    line-height: 1; 
+    border: none;
+}
+
+.sumeria {
+    padding: 0;
+    cursor: pointer;
+}
+
+.titlesumeria {
+    text-align: center;
+    font-family: ENPAGOS;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin: 3px 0; 
+    padding: 0;
+    line-height: 1; 
+}
+
+summary{
+    background-color: transparent;
+    font-family: YAMEVOYAMICASA;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    padding: 8px;
+}
+
+details{
+padding: 15px;
+border: 2px solid #5a7457;
+background-color: #343333;
+font-weight: bold;
+}
+
+.detailscomen{
+    padding: 5px 10px; 
+    background-color: rgba(58, 111, 165, 0.3); 
+    font-weight: bold;
+    margin: 0; 
+    line-height: 1.4; 
+}
+
+.titlesec{
+    background-color: transparent;
+    font-family: YAMEVOYAMICASA;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: white;
+    padding:0;
+}
+
+.enlacesvirus{
+    color: rgb(183, 183, 238);
+}
+
+.cajatec{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    padding: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+
+}
+
+.cajitastec{
+    text-align: center;
+    background-color: #00B4D8;
+    width: clamp(300px, 50%, 400px);
+}
+
+.imgfinal{
+    margin-top: 15px;
+    width: 80%;
+    height: 35vh;
+}
+
+.titlefinals{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.PARfin{
+    display: block;
+    padding: 15px;
+    text-align: justify;
+}
+.PARfin2{
+    display: block;
+    padding: 15px;
+    text-align: justify;
+}
+
+.cajitastec2{
+    margin-top: 5px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #00B4D8;
+    width: 70%;
+    
+}
+
+.fooe{
+    margin-top: 50px;
+    padding: 25px;
+    background-color: rgb(52, 46, 46);
+    color: white;
+    text-align: center;
+}
+
+.volver{
+    color: blue;
+    text-shadow: 
+    0 0 10px white,
+    0 0 20px white,
+    0 0 30px white;
+    font-weight: bolder;
+}
+
+.yo{
+    text-shadow: 
+    0 0 10px blue,
+    0 0 20px blue;
+}
+.poli{
+    color: white;
+    text-align: center;
+}
